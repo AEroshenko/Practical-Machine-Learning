@@ -152,7 +152,7 @@ confusionMatrix(training[-inTrain,53],crossValPredictions)</code></pre>
 ## Detection Rate         0.2830   0.1850   0.1715   0.1566   0.1821
 ## Detection Prevalence   0.2845   0.1935   0.1743   0.1639   0.1837
 ## Balanced Accuracy      0.9864   0.9877   0.9723   0.9911   0.9962</code></pre>
-<p><strong>Accuracy &gt; 0.99</strong> The achieved accuracy was considered sufficient. And hence the model was not then combined with any others. Therefore out of sample estimation part was complete. (The predicted error is actually slightly bigger, than one on the cross-validation set, as test data had been preproccessed as a whole before that)</p>
+<p><strong>Accuracy &gt; 0.97</strong> The achieved accuracy was considered sufficient. And hence the model was not then combined with any others. Therefore out of sample estimation part was complete. (The predicted error is actually slightly bigger, than one on the cross-validation set, as test data had been preproccessed as a whole before that)</p>
 <p>To submit the actual results: - predictions were made - piece of code from coursera page was employed</p>
 <pre class="r"><code>testPredictions &lt;- predict(modelFit,testingPC)</code></pre>
 <pre class="r"><code>pml_write_files = function(x){
